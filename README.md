@@ -25,31 +25,22 @@ While 7-Eleven maintains its position as Thailand’s largest retail chain, seve
 ---
 ### Data Dictionary
 
-Here is the table of data dictionary:
-
-| Column                    | Data Type     | Description                                                                       |
-|---------------------------|---------------|-----------------------------------------------------------------------------------|
-| id	                    | int	        | ID of selling item                                                                |
-| province	                | string        | province name: this dataset only includes Bangkok, Samut Prakan and Nonthaburi    |
-| district	                | string	    | district name                                                                     |
-| subdistrict	            | string	    | subdtistrict name                                                                 |
-| address	                | string	    | address e.g. street name, area name, soi number                                   |
-| property_type	            | string	    | type of the house: Condo, Townhouse, or Detached House                            |
-| total_units	            | float	        | the number of rooms/houses that the condo/village has                             |
-| bedrooms	                | int	        | the number of bedrooms                                                            |
-| baths	                    | int	        | the number of baths                                                               |
-| floor_area	            | float	        | total area of inside floor                                                        |
-| floor_level	            | int	        | floor level of the room                                                           |
-| land_area	                | float	        | total area of the land                                                            |
-| latitude	                | float	        | latitude of the house                                                             |
-| longitude	                | float	        | longitude of the house                                                            |
-| nearby_stations	        | int	        | the number of nearby stations (within 1km)                                        |
-| nearby_station_distance	| list	        | list of (station name, distance[m]).                                              |
-| nearby_bus_stops	        | int	        | the number of nearby bus stops                                                    |
-| nearby_supermarkets	    | int	        | the number of nearby supermarkets                                                 |
-| nearby_shops	            | int	        | the number of nearby shops                                                        |
-| year_built	            | int	        | year built                                                                        |
-| month_built	            | string	    | month built: January-December                                                     |
-| price	                    | float         | selling price                                                                     |
+Column details are [here](data_dictionary.md).
 
 
+---
+### Finding
+
+Using our housing dataset and 7-Eleven store locations, our model generated the following output:
+
+![Number of underserved 7-Eleven per Zone!](figures/underserved_store.png "Number of underserved 7-Eleven per Zone")
+
+
+---
+### Conclusion
+
+#### Recommendation
+
+- Opening new branches according to the research and model.
+- Take a onsite survey to find the available land for sale or rent
+- Instead of opening new branches, having more new cashier and stocks can be considered.
